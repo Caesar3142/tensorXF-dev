@@ -1,11 +1,10 @@
 /*--------------------------------*- C++ -*----------------------------------*\
-  =========                 |
-  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Version:  11
-     \\/     M anipulation  |
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
-// -----------------------------tensor_xf_2024------------------------------- //
 
 FoamFile
 {
@@ -17,7 +16,7 @@ FoamFile
 
 dimensions      [0 1 -1 0 0 0 0];
 
-internalField   uniform (20 0 0);
+internalField   uniform (10 0 0);
 
 boundaryField
 {
@@ -47,3 +46,5 @@ boundaryField
 }
 
 // ************************************************************************* //
+// **************************** tensorXF 2025 ****************************** //
+// **************************** pttensor.com ******************************* //

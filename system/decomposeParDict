@@ -1,14 +1,14 @@
 /*--------------------------------*- C++ -*----------------------------------*\
-  =========                 |
-  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Version:  11
-     \\/     M anipulation  |
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
-// -----------------------------tensor_xf_2024------------------------------- //
 
 FoamFile
 {
+    version     2.0;
     format      ascii;
     class       dictionary;
     location    "system";
@@ -16,15 +16,34 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-numberOfSubdomains  16;
+numberOfSubdomains 8;
 
-decomposer      hierarchical;
-distributor     ptscotch;
+method          hierarchical;
+
+simpleCoeffs
+{
+    n               (2 2 2);
+    delta           0.001;
+}
 
 hierarchicalCoeffs
 {
-    n               (4 2 2);
+    n               (2 2 2);
+    delta           0.001;
     order           xyz;
 }
 
+manualCoeffs
+{
+    dataFile        "";
+}
+
+distributed     no;
+
+roots           ( );
+
+
+
 // ************************************************************************* //
+// ************************ tensorVLV - 2025 ******************************* //
+// ************************** pttensor.com ********************************* //

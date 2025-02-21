@@ -1,11 +1,11 @@
 /*--------------------------------*- C++ -*----------------------------------*\
-  =========                 |
-  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Version:  11
-     \\/     M anipulation  |
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
-// -----------------------------tensor_xf_2024------------------------------- //
+
 FoamFile
 {
     format      ascii;
@@ -46,3 +46,5 @@ boundaryField
 
 
 // ************************************************************************* //
+// **************************** tensorXF 2025 ****************************** //
+// **************************** pttensor.com ******************************* //

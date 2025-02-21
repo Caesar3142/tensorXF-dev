@@ -1,9 +1,9 @@
 /*--------------------------------*- C++ -*----------------------------------*\
-  =========                 |
-  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
-   \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Version:  11
-     \\/     M anipulation  |
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 
 forces
@@ -22,9 +22,11 @@ forces
     CofR            (0 0 0);  // Axle midpoint on ground
     pitchAxis       (0 0 1);
     magUInf         10;
-    lRef            1.42;        // Wheelbase length
-    Aref            0.75;        // Estimated
+    lRef            7;        // Wheelbase length
+    Aref            4;        // Estimated from frontal area
 }
 
 
 // ************************************************************************* //
+// **************************** tensorXF 2025 ****************************** //
+// **************************** pttensor.com ******************************* //
